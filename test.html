@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <div class="nav">
+        <span>Login</span> |
+        <span id="register-open">Register</span> |
+        <span id="filters-open">Filter</span>
+    </div>
+    <div id="head" class="header">
+        <h2 class="Name">Learning JavaScript</h2>
+        <input type="serach" name="" id="serach-input" placeholder="Search...">
+        <p id="error"></p>
+        <div>
+            <button id="search-button">Search</button>
+        </div>
+    </div>
+    <div id="lsit_of_users">
+    
+    </div>
+
+    <div id="register">
+        <svg class="close" onclick="closing_register()" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M289.94 256l95-95A24 24 0 00351 127l-95 95-95-95a24 24 0 00-34 34l95 95-95 95a24 24 0 1034 34l95-95 95 95a24 24 0 0034-34z"></path></svg>
+        <form action="">
+            <h2>Registration</h2>
+            <input type="text" name="" id="username" placeholder="Name Surname"><br>
+            <input type="number" name="" id="userage" placeholder="Your age"><br>
+            <input type="text" name="" id="city" placeholder="City where you live"><br>
+            <div>Choose your University</div>
+            <select name="" id="univer_box">
+                <option value="">Choose</option>
+                <option value="YSU">Yerevan State University</option>
+                <option value="AUA">American University of Armenia</option>
+                <option value="YSMU">Yerevan State Medical University</option>
+                <option value="UFAR">Université française en Arménie</option>
+            </select><br>
+            <label for="male">Male</label> <input type="radio" value="male" name="gen" id="male">
+            <label for="female">Female</label> <input type="radio" name="gen" id="female"><br>
+            <p id="register-error"></p>
+            <input type="button" onclick="createUser()" value="Register">
+        </form>
+    </div>
+
+
+    <div id="filters">
+        <svg class="close" onclick="closing_filter()" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M289.94 256l95-95A24 24 0 00351 127l-95 95-95-95a24 24 0 00-34 34l95 95-95 95a24 24 0 1034 34l95-95 95 95a24 24 0 0034-34z"></path></svg>
+        <h2>Filters</h2>
+        <p>University</p>
+        <select name="" id="univer">
+            <option value="">Choose</option>
+            <option value="YSU">Yerevan State University</option>
+            <option value="AUA">American University of Armenia</option>
+            <option value="YSMU">Yerevan State Medical University</option>
+            <option value="UFAR">Université française en Arménie</option>
+        </select>
+
+        <p>Gender</p>
+        <select name="" id="gender">
+            <option value="">Choose</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+
+        <br>
+        <br>
+
+        <button id="submit">Check</button>
+    </div>
+
+    <script src="test.js"></script>
+</body>
+</html>
